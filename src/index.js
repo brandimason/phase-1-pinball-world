@@ -45,13 +45,13 @@ function handleForm(){
         event.preventDefault()
         
         currentGame.high_score = event.target["score-input"].value;
-        // const highScore = document.querySelector('#detail-high-score')
-        // // console.log(currentGame.high_score)
-        // highScore.textContent = parseInt(currentGame.high_score)
+
         
 
         showDetails(currentGame)
+        //referring back to the function
         form.reset()
+        //resets the form so nothing is inside the box once submit it clicked
     })
 }
 
